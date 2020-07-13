@@ -5,7 +5,7 @@ import PageTitle from '../components/pageTitle'
 const contato = () => {
     return (
         <div>
-            <PageTitle title="Contato"/>
+            <PageTitle title='Cont'/>
             <h1> Contato </h1>
             <div>
                 <Link href="/">
