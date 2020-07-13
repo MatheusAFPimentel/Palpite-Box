@@ -1,11 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import PageTitle from '../components/pageTitle'
+import Head from 'next/head'
 
 const contato = () => {
     return (
         <div>
-            <PageTitle title='Cont'/>
+            <Head>
+                <title> Contatos - PalpiteBox</title>
+            </Head>
             <h1> Contato </h1>
             <div>
                 <Link href="/">
