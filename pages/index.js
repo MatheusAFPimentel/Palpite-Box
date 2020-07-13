@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import useSWR from 'swr'
-import PageTitle from '../components/pageTitle'
+import Head from 'next/head'
+
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -9,7 +10,9 @@ const Index = () => {
     const { data, error } = useSWR('/api/get-promo', fetcher)
     return (
         <div>
-            <PageTitle title = 'Seja bem-vindo'/>
+            <Head>
+                <title> Seja bem-vindo </title>
+            </Head>
             <p className='mt-6 text-center'>
                 O estabelecimento sempre busca atender melhor seus clientes.<br />
                 por isso, estamos sempre abertos a ouvir a sua opinião.

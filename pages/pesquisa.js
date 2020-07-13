@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { data } from 'autoprefixer'
-import PageTitle from '../components/pageTitle'
+import Head from 'next/head'
 
 
 const Pesquisa = () => {
@@ -39,7 +39,9 @@ const Pesquisa = () => {
 
     return (
         <div className='pt-6'>
-            <PageTitle title='Pesquisa'/>
+            <Head>
+                <title> Pesquisa - PalpiteBox</title>
+            </Head>
             <h1 className='text-center font-bold my-4 text-2xl'> Criticas e Sugestões</h1>
             <p className='mt-6 text-center mb-6'>
                 O estabelecimento sempre busca atender melhor seus clientes.<br />
