@@ -6,10 +6,10 @@ const Layout = ({children}) => {
     return (
         <div>
             <Header />
-            <div className='container mx-auto'>
+            <div className='container mx-auto flex-1 mx-auto p-8'>
                 {children}
             </div>
-            <Footer />
+            <Footer className='w-full text-center border-t border-grey p-4 pin-b' />
         </div>
     )
 }

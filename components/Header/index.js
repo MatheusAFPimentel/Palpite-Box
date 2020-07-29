@@ -11,7 +11,7 @@ const Header = () => {
                     </Link>
                 </div>
             </div>
-            <div className="bg-gray-300 p-4 shadow-md text-center">
+            <div className="bg-gray-300 p-8 shadow-md text-center">
                 <Link href="/sobre">
                     <a className="px-2 hover:underline">Sobre</a>
                 </Link>

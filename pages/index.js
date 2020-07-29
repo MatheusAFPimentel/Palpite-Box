@@ -13,18 +13,18 @@ const Index = () => {
             <Head>
                 <title> Seja bem-vindo </title>
             </Head>
-            <p className='mt-6 text-center'>
+            <p className='mt-6 text-center p-8'>
                 O estabelecimento sempre busca atender melhor seus clientes.<br />
                 por isso, estamos sempre abertos a ouvir a sua opinião.
             </p>
-            <div className='text-center my-12'>
+            <div className='text-center my-12 p-20'>
                 <Link href='/pesquisa'>
                     <a className='bg-blue-400 px-6 py-4 font-bold rounded-lg shadow-lg hover:shadow-sm'> Dar opinião ou sugestão</a>
                 </Link>
             </div>
             {!data && <p> Carregando... </p> }
             {!error && data && data.showCoupon &&
-                <p className='mt-6 text-center'>
+                <p className='text-center'>
                     {data.message}
             </p>
             }
